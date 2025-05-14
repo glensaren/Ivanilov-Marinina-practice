@@ -1,36 +1,43 @@
 @font-face {
-  font-family: 'Montserrat Alternates';
-  src: url('./fonts/MontserratAlternates-Medium.ttf') format('truetype');
-  font-weight: 500; /* Medium weight */
-  font-style: normal;
+    font-family: 'Montserrat Alternates Medium';
+    src: url('../fonts/MontserratAlternates-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat-bold';
-    src: url('./fonts/MontserratAlternates-Bold.ttf');
+    font-family: 'Montserrat Alternates Bold';
+    src: url('../fonts/MontserratAlternates-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat-italic';
-    src: url('./fonts/MontserratAlternates-ExtraBoldItalic.ttf');
+    font-family: 'Montserrat Alternates ExtraBold Italic';
+    src: url('../fonts/MontserratAlternates-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'DM-sans';
-    src: url('./fonts/DMSans_18pt-Bold.ttf');
+    font-family: 'DM Sans Bold';
+    src: url('../fonts/DMSans-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 *{
     
 }
 
-:root{
-    --mont-med: 'Montserrat-medium';
-    --mont-bold: 'Montserrat-bold';
-    --mont-ex-it: 'Montserrat-italic';
-    --dm-sans: 'DM-sans';
+:root {
+    --mont-med: 'Montserrat Alternates Medium';
+    --mont-bold: 'Montserrat Alternates Bold';
+    --mont-ex-it: 'Montserrat Alternates ExtraBold Italic';
+    --dm-sans: 'DM Sans Bold';
     --light-blue: #25DAC5;
-    --main-blue:  #5508A7;
+    --main-blue: #5508A7;
+    --text-blue: #1E0E62;
     font-size: 62.5%;
 }
 
@@ -50,10 +57,48 @@ header{
 }
 
 .header__link{
-    font-family: var(--mont-med);
+    font-family: var(--mont-med), sans-serif;
     color: white;
     text-decoration: none;
     font-size: 2rem;
     line-height: 140%;
     margin:15px 0 5px 0;
+}
+
+.main-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 18rem;
+    flex-direction: column;
+}
+
+.main__title{
+    font-family: var(--dm-sans), sans-serif;
+    color: var(--text-blue);
+    font-size: 7.2rem;
+    line-height: 120%;
+    padding: 1.5rem;
+}
+
+.main__subtitle{
+    font-family: var(--dm-sans), sans-serif;
+    color: var(--text-blue);
+    font-size: 2.2rem;
+    line-height: 140%;
+    margin-top: 2rem;
+    align-self: center;
+}
+
+.main__link{
+    font-family: var(--mont-med), sans-serif;
+    color: white;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 20px;
+    padding:1rem 2rem;
+    text-decoration: none;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin:12rem auto;
 }
