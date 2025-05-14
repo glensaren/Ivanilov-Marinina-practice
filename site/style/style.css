@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('./fonts/MontserratAlternates-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('./fonts/MontserratAlternates-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-italic';
+    src: url('./fonts/MontserratAlternates-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'DM-sans';
+    src: url('./fonts/DMSans_18pt-Bold.ttf');
+}
+
+*{
+    
+}
+
+:root{
+    --mont-med: 'Montserrat-medium';
+    --mont-bold: 'Montserrat-bold';
+    --mont-ex-it: 'Montserrat-italic';
+    --dm-sans: 'DM-sans';
+    --light-blue: #25DAC5;
+    --main-blue:  #5508A7;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: var(--main-blue);
+}
+
+.header-wrapper{
+    display: flex;
+    padding: 3.5rem;
+    gap: 4.5rem;
+    justify-content: center;
+}
+
+.header__link{
+    font-family: var(--mont-med);
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 140%;
+    margin:15px 0 5px 0;
+}
