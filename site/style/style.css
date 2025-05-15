@@ -160,7 +160,7 @@ header{
     border-radius: 1.5rem;
 }
 
-.content-box p, .content-box li{
+.content-box p, .content-box li, .content-box figcaption{
     font-size: 1.8rem;
     color: white;
     font-family: var(--mont-med);
@@ -189,14 +189,14 @@ header{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 9rem 1fr;
-    grid-template-rows: 9rem 7rem 53rem;
+    grid-template-rows: 1fr 1fr auto;
 }
 
 .page-grid-wrapper h2{
     grid-column: span 3;
 }
 
-.page-grid-wrapper div{
+.page-grid-wrapper div , .page-grid-wrapper figure{
     grid-row: 3;
 }
 
@@ -222,3 +222,27 @@ header{
     border-radius: 2rem;
     background-color: var(--bg-transp-blue)
 }
+
+.joe.content-box img{
+    width: 100%;
+}
+
+.joe.content-box{
+    background-color: var(--bg-transp-blue);
+    border-radius: 1rem;
+}
+
+.joe__caption__title{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.joe.content-box figcaption{
+    text-align: center;
+    font-weight: 100;
+    padding: 2rem 1rem 3rem 1rem;
+    line-height: 130%;
+}
+
+
