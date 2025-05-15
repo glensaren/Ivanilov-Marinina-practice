@@ -36,8 +36,9 @@
     --mont-ex-it: 'Montserrat Alternates ExtraBold Italic';
     --dm-sans: 'DM Sans Bold';
     --light-blue: #25DAC5;
-    --main-blue: #5508A7;
+    --main-blue: rgb(85, 8, 167);
     --text-blue: #1E0E62;
+    --bg-transp-blue: rgba(85, 8, 167, 0.9);
     font-size: 62.5%;
 }
 
@@ -119,6 +120,7 @@ header{
     line-height: 170%;
     padding: 1.5rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .page-wrapper{
@@ -176,4 +178,47 @@ header{
     color: black;
     margin-bottom: .75rem;
     list-style-type: decimal;
+}
+
+
+.par.page-wrapper{
+    max-width: 120rem;
+}
+
+.page-grid-wrapper{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 9rem 1fr;
+    grid-template-rows: 9rem 7rem 53rem;
+}
+
+.page-grid-wrapper h2{
+    grid-column: span 3;
+}
+
+.page-grid-wrapper div{
+    grid-row: 3;
+}
+
+.par.content-box strong{
+    font-family: var(--mont-ex-it);
+    font-style: italic;
+    color: white;
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 150%;
+}
+
+.par.content-box li{
+    margin-bottom: 2rem;
+    line-height: 120%;
+}
+
+.par.content-box{
+    background-color: var(--main-blue);
+    padding: 4rem 2.5rem;
+    border-radius: 2rem;
+    background-color: var(--bg-transp-blue)
 }
