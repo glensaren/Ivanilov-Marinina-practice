@@ -190,6 +190,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 9rem 1fr;
     grid-template-rows: 1fr 1fr auto;
+    margin-bottom: 10rem;
 }
 
 .page-grid-wrapper h2{
