@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Neue';
+    src: url(../fonts/PPNeueMachina/PPNeueMachina-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Neue-bold';
+    src: url(../fonts/PPNeueMachina/PPNeueMachina-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'IBM';
+    src: url(../fonts/ibmplexmono/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'IBM-bold';
+    src: url(../fonts/ibmplexmono/IBMPlexMono-Bold.ttf);
+}
+
+*{
+    color: white
+}
+
+:root{
+    --font-neue: 'Neue-bold';
+    --font-ibm: 'IBM';
+    --white: #ffffff54;
+    --dark-blue:  #120427;
+    --light-blue: #ccaaff;
+    --main-blue:  #3c058f;
+    /* --main-blue:  #120427; */
+    --input-blue:  #7a05ffb2;
+    font-size: 62.5%;
+    background-color: var(--main-blue);
+}
+
+.experience-wrapper, .money{
+    padding:0 10px;
+}
+
+.header{
+    font-family: var(--font-neue);
+    font-size: 2rem;
+    line-height: 140%;
+    margin:15px 0 5px 0;
+}
+
+tbody{
+    gap:5px;
+}
+
+th, td {
+    border: 2px solid var(--main-blue);
+    /* border:none; */
+    border-radius:10px ;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 5px;
+    min-width: 100px;
+    background-color: var(--dark-blue);
+}
+
+th{
+    font-family: var(--font-neue);
+    font-size: 1.6rem;
+    line-height: 140%;
+    margin-top:15px;
+}
+
+td{
+    font-family: var(--font-ibm);
+    font-size: 1.4rem;
+    line-height: 140%;
+    margin-top:15px;
+}
+
+input {
+    padding: 5px;
+    background-color: var(--input-blue);
+    text-decoration: none;
+    border:none;
+    border-radius: 7px;
+}
+
+span{
+    background-color: none;
+}
+
+input:focus{
+    text-decoration: none;
+    border:none;
+    scale:1.01;
+}
+
+
